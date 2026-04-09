@@ -1,0 +1,21 @@
+AULA 3 FOI A INSTALAÇÃO DE PYTHON
+
+print('Olá, Mundo!') = Estamos chamando a função print com parenteses e usamos aspas para texto.
+print(7 + 4) = Estou chamando a função simples e utilizando uma soma de números.
+print('7' + '4') = Estou chamando a função e estou juntando duas mensagens, porque os números estão dentro de aspas por isso o resultado é 74.
+
+Caso queira utilizar mais além de texto e soma ou divisão já precisamos entrar com variáveis.
+
+Toda variável é um objeto e toda variável pode receber algo
+
+nome = 'Guanabara'
+idade = 25
+peso = 75.8
+print(nome, idade, peso)
+
+Vamos chamar outra função input utilizada para receber um valor ou um texto.
+
+nome = input('Qual é seu nome? ')
+idade = input('Qual é sua idade? ')
+peso = input('Qual é seu peso? ')
+print(nome, idade, peso)
