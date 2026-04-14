@@ -80,3 +80,51 @@ print('Você digitou {} seu número convertido em hectômetros é {}'.format(val
 print('Você digitou {} seu número convertido em quilômetros é {}'.format(valor, valor / quilometros))
 
 # Faça um programa que leia o número inteiro qualquer e mostre na tela a sua tabuada.
+
+numero = int(input('Digite um número: '))
+
+print('=' * 12)
+print('{} X 01 = {:2}'.format(numero, numero * 1))
+print('{} X 02 = {:2}'.format(numero, numero * 2))
+print('{} X 03 = {:2}'.format(numero, numero * 3))
+print('{} X 04 = {:2}'.format(numero, numero * 4))
+print('{} X 05 = {:2}'.format(numero, numero * 5))
+print('{} X 06 = {:2}'.format(numero, numero * 6))
+print('{} X 07 = {:2}'.format(numero, numero * 7))
+print('{} X 08 = {:2}'.format(numero, numero * 8))
+print('{} X 09 = {:2}'.format(numero, numero * 9))
+print('{} X 10 = {:2}'.format(numero, numero * 10))
+print('=' * 12)
+
+# Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere o US$1.00 = R$3.27
+
+dinheiro = float(input('Quantos reais você tem: R$'))
+
+dolar = 3.27 # R$3.27
+euro = 3.90 # R$3.90
+
+print('Você tem R${:.2f}, você pode comprar ${:.2f}.'.format(dinheiro, dinheiro / dolar))
+print('Você tem R${:.2f}, você pode comprar €{:.2f}.'.format(dinheiro, dinheiro / euro))
+
+# Faça um programa que leia a altura e a largura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta, pinta uma área de 2m².
+
+altura = float(input('Qual é a altura da parede em metros:  '))
+largura = float(input('Qual é a largura da parede em metros: '))
+area = altura * largura
+litros = 2
+print('A altura da parede é {:.2f}m e a lagura é {:.2f}m que da {:.2f}m²'. format(altura, largura, area))
+print('Com essa metragem você precisa de {:.2f}l de tinta para pintar.'.format(area / litros))
+
+# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+
+preco = float(input('Qual o preço do produto R$'))
+desconto = preco - preco * 0.05
+print('Você ganhou 5% de desconto! Meus parabéns!\n' \
+'Preço do produto com desconto R${:.2f}.'.format(desconto))
+
+# Faça um algoritmo que eleia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+
+salario = float(input('Qual é o salário do funcionário R$'))
+aumento = salario + salario * 0.15
+print('Você optou por dar um aumento de 15% para os funcionários.\n' \
+'O salário do funcionário atual com o valor R${:.2f} ficou R${:.2f} com esse novo aumento.'.format(salario, aumento))
