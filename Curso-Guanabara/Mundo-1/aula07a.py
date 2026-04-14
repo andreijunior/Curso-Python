@@ -1,3 +1,9 @@
+nome = input('Qual é seu nome? ')
+print('Prazer em te conhecer {:^20}!'.format(nome))
+print('Prazer em te conhecer {:>20}!'.format(nome))
+print('Prazer em te conhecer {:<20}!'.format(nome))
+print('Prazer em te conhecer {:=^20}!'.format(nome))
+
 numero_1 = int(input('Um valor: '))
 numero_2 = int(input('Outro valor: '))
 
@@ -55,3 +61,22 @@ print('A média da nota {} e {} é igual a {}.'.format(nota_1, nota_2, media))
 
 # Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milimetros.
 
+# Aqui vamos fazer diferente pois peguei outras metragens na internet
+
+valor = int(input('Digite um valor em metros para sua conversão: '))
+
+decimetros = 10 # 10 decímetros correpondem a 1 metro
+centimetros = 100 # 100 centímetros corresponde a 1 metro
+milimetros = 1000 # 1000 milímetros corresponde a 1 metro
+decametros = 10 # 1 decâmetro corresponde a 10 metros
+hectometros = 100 # 1 hectômetro corresponde a 100 metros
+quilometros = 1000 # 1 quilômetro corresponde a 1000 metros
+
+print('Você digitou {} seu número convertido em centímetros é {}'.format(valor, valor * centimetros))
+print('Você digitou {} seu número convertido em decímetros é {}'.format(valor, valor * decimetros))
+print('Você digitou {} seu número convertido em milímetros é {}'.format(valor, valor * milimetros))
+print('Você digitou {} seu número convertido em decâmetros é {}'.format(valor, valor / decametros))
+print('Você digitou {} seu número convertido em hectômetros é {}'.format(valor, valor / hectometros))
+print('Você digitou {} seu número convertido em quilômetros é {}'.format(valor, valor / quilometros))
+
+# Faça um programa que leia o número inteiro qualquer e mostre na tela a sua tabuada.
