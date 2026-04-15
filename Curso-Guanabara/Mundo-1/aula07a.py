@@ -128,3 +128,10 @@ salario = float(input('Qual é o salário do funcionário R$'))
 aumento = salario + salario * 0.15
 print('Você optou por dar um aumento de 15% para os funcionários.\n' \
 'O salário do funcionário atual com o valor R${:.2f} ficou R${:.2f} com esse novo aumento.'.format(salario, aumento))
+
+# ex014 Escreva um programa que converta uma temperatura digitada em °C e converta para °F
+
+celsius = float(input('Digite a temperatura em Celsius: '))
+fahrenheit = (celsius * 1.8) + 32
+
+print('A temperatura em {}°C equivale {}°F.'.format(celsius, fahrenheit))
