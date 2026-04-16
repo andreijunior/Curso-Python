@@ -36,13 +36,13 @@ print('O primeiro valor é {} \nO segundo valor é {} \nE o ultimo é {}.'.forma
 
 # Depois ele passou uma lista de exercícios...
 
-# Crie um programa que leia um número inteiro e mostre na tela seu sucessor e seu antecessor.
+# ex005 Crie um programa que leia um número inteiro e mostre na tela seu sucessor e seu antecessor.
 
 numero = int(input('Digite um número: '))
 
 print('O número digitado foi {}, ele tem {} como seu sucessor e {} como seu antecessor.'.format(numero, numero + 1, numero - 1))
 
-# Crie um program que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+# ex006 Crie um program que leia um número e mostre o seu dobro, triplo e raiz quadrada.
 
 numero = int(input('Difigte um número: '))
 dobro = numero * 2
@@ -51,7 +51,7 @@ quadrada = numero ** 0.5
 
 print('O número digitado foi {}\n Seu dobro é {}\n Seu triplo é {}\n Sua raiz quadrada é {:.2f}'.format(numero, dobro, triplo, quadrada))
 
-# Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
+# ex007 Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
 
 nota_1 = float(input('Digite a primeira nota: '))
 nota_2 = float(input('Digite a segunda nota: '))
@@ -59,7 +59,7 @@ media = (nota_1 + nota_2) / 2
 
 print('A média da nota {} e {} é igual a {}.'.format(nota_1, nota_2, media))
 
-# Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milimetros.
+# ex008 Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milimetros.
 
 # Aqui vamos fazer diferente pois peguei outras metragens na internet
 
@@ -79,7 +79,7 @@ print('Você digitou {} seu número convertido em decâmetros é {}'.format(valo
 print('Você digitou {} seu número convertido em hectômetros é {}'.format(valor, valor / hectometros))
 print('Você digitou {} seu número convertido em quilômetros é {}'.format(valor, valor / quilometros))
 
-# Faça um programa que leia o número inteiro qualquer e mostre na tela a sua tabuada.
+# ex009 Faça um programa que leia o número inteiro qualquer e mostre na tela a sua tabuada.
 
 numero = int(input('Digite um número: '))
 
@@ -96,7 +96,7 @@ print('{} X {:2} = {:2}'.format(numero, 9, numero * 9))
 print('{} X {:2} = {:2}'.format(numero, 10, numero * 10))
 print('=' * 12)
 
-# Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere o US$1.00 = R$3.27
+# ex010 Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere o US$1.00 = R$3.27
 
 dinheiro = float(input('Quantos reais você tem: R$'))
 
@@ -106,7 +106,7 @@ euro = 3.90 # R$3.90
 print('Você tem R${:.2f}, você pode comprar ${:.2f}.'.format(dinheiro, dinheiro / dolar))
 print('Você tem R${:.2f}, você pode comprar €{:.2f}.'.format(dinheiro, dinheiro / euro))
 
-# Faça um programa que leia a altura e a largura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta, pinta uma área de 2m².
+# ex011 Faça um programa que leia a altura e a largura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta, pinta uma área de 2m².
 
 altura = float(input('Qual é a altura da parede em metros:  '))
 largura = float(input('Qual é a largura da parede em metros: '))
@@ -115,14 +115,14 @@ litros = 2
 print('A altura da parede é {:.2f}m e a lagura é {:.2f}m que da {:.2f}m²'. format(altura, largura, area))
 print('Com essa metragem você precisa de {:.2f}l de tinta para pintar.'.format(area / litros))
 
-# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+# ex012 Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
 
 preco = float(input('Qual o preço do produto R$'))
 desconto = preco - preco * 0.05
 print('Você ganhou 5% de desconto! Meus parabéns!\n' \
 'Preço do produto com desconto R${:.2f}.'.format(desconto))
 
-# Faça um algoritmo que eleia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+# ex013 Faça um algoritmo que eleia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
 
 salario = float(input('Qual é o salário do funcionário R$'))
 aumento = salario + salario * 0.15
@@ -135,3 +135,11 @@ celsius = float(input('Digite a temperatura em Celsius: '))
 fahrenheit = (celsius * 1.8) + 32
 
 print('A temperatura em {}°C equivale {}°F.'.format(celsius, fahrenheit))
+
+# ex015 Escreva um programa que pergunta a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0.15 por Km rodado.
+
+Quilomêtros = int(input('Quantos Km foram percorridos? '))
+Dias = int(input('Quantos dias esse carro foi alugado? '))
+Resultado = (60 * Dias) + (Quilomêtros * 0.15)
+
+print('O carro alugado percorreu {}Km e {} Dias.\nO custo por Km percorrido é R$0.15 e por dias é R$60.00.\nO valor a pagar é R${:.2f}.'.format(Quilomêtros, Dias, Resultado))
